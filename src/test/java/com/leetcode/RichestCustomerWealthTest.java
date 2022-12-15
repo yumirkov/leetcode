@@ -2,7 +2,7 @@ package com.leetcode;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class RichestCustomerWealthTest {
 
@@ -19,7 +19,7 @@ class RichestCustomerWealthTest {
     @Test
     void example1() {
         // given
-        var accounts = new int[][] {{1,2,3},{3,2,1}};
+        var accounts = new int[][]{{1, 2, 3}, {3, 2, 1}};
         var expected = 6;
         // when
         int actual = solution.maximumWealth(accounts);
@@ -39,7 +39,7 @@ class RichestCustomerWealthTest {
     @Test
     void example2() {
         // given
-        var accounts = new int[][] {{1,5},{7,3}, {3,5}};
+        var accounts = new int[][]{{1, 5}, {7, 3}, {3, 5}};
         var expected = 10;
         // when
         int actual = solution.maximumWealth(accounts);
@@ -54,7 +54,7 @@ class RichestCustomerWealthTest {
     @Test
     void example3() {
         // given
-        var accounts = new int[][] {{2,8,7},{7,1,3}, {1,9,5}};
+        var accounts = new int[][]{{2, 8, 7}, {7, 1, 3}, {1, 9, 5}};
         var expected = 17;
         // when
         int actual = solution.maximumWealth(accounts);

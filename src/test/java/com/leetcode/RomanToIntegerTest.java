@@ -8,6 +8,11 @@ class RomanToIntegerTest {
 
     RomanToInteger solution = new RomanToInteger();
 
+    /**
+     * Input: s = "III"
+     * Output: 3
+     * Explanation: III = 3.
+     */
     @Test
     void example1() {
         // given
@@ -19,6 +24,11 @@ class RomanToIntegerTest {
         assertEquals(expected, actual);
     }
 
+    /**
+     * Input: s = "LVIII"
+     * Output: 58
+     * Explanation: L = 50, V= 5, III = 3.
+     */
     @Test
     void example2() {
         // given
@@ -30,6 +40,11 @@ class RomanToIntegerTest {
         assertEquals(expected, actual);
     }
 
+    /**
+     * Input: s = "MCMXCIV"
+     * Output: 1994
+     * Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
+     */
     @Test
     void example3() {
         // given

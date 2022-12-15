@@ -8,6 +8,11 @@ class RunningSumOf1dArrayTest {
 
     RunningSumOf1dArray solution = new RunningSumOf1dArray();
 
+    /**
+     * Input: nums = [1,2,3,4]
+     * Output: [1,3,6,10]
+     * Explanation: Running sum is obtained as follows: [1, 1+2, 1+2+3, 1+2+3+4].
+     */
     @Test
     void example1() {
         // given
@@ -19,6 +24,12 @@ class RunningSumOf1dArrayTest {
         assertArrayEquals(expected, actual);
     }
 
+    /**
+     * Input: nums = [1,1,1,1,1]
+     * Output: [1,2,3,4,5]
+     * Explanation: Running sum is obtained as follows:
+     * [1, 1+1, 1+1+1, 1+1+1+1, 1+1+1+1+1].
+     */
     @Test
     void example2() {
         // given
@@ -30,6 +41,10 @@ class RunningSumOf1dArrayTest {
         assertArrayEquals(expected, actual);
     }
 
+    /**
+     * Input: nums = [3,1,2,10,1]
+     * Output: [3,4,6,16,17]
+     */
     @Test
     void example3() {
         // given

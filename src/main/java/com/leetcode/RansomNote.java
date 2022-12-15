@@ -16,7 +16,6 @@ public class RansomNote {
         for (int i = 0; i < magazine.length(); i++) {
             // increment counters for available chars
             var mChar = magazine.charAt(i);
-            System.out.println(1 + mChar);
             var mCount = charCounters[mChar - charIndexShift];
             charCounters[mChar - charIndexShift] = mCount + 1;
             // decrease amount of missed chars

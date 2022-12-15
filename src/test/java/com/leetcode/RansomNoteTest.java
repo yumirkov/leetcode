@@ -73,7 +73,7 @@ class RansomNoteTest {
     }
 
     /**
-     * Input: ransomNote = "s", magazine = "aabasdklfalsdjfhlaksdjfaklsdjfkhweois"
+     * Input: ransomNote = "fihjjjjei", magazine = "hjibagacbhadfaefdjaeaebgi"
      * Output: true
      */
     @Test
