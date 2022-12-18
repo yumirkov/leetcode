@@ -1,0 +1,72 @@
+package com.leetcode;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+class MergeSortedArrayTest {
+
+    MergeSortedArray solution = new MergeSortedArray();
+
+    /**
+     * Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
+     * Output: [1,2,2,3,5,6]
+     * Explanation: The arrays we are merging are [1,2,3] and [2,5,6].
+     * The result of the merge is [1,2,2,3,5,6] with the underlined elements coming from nums1.
+     */
+    @Test
+    void example1() {
+        // given
+        var nums1 = new int[]{1, 2, 3, 0, 0, 0};
+        var m = 3;
+        var nums2 = new int[]{2, 5, 6};
+        var n = 3;
+        var expected = new int[]{1, 2, 2, 3, 5, 6};
+        // when
+        solution.merge(nums1, m, nums2, n);
+        // then
+        assertArrayEquals(expected, nums1);
+    }
+
+    /**
+     * Input: nums1 = [1], m = 1, nums2 = [], n = 0
+     * Output: [1]
+     * Explanation: The arrays we are merging are [1] and [].
+     * The result of the merge is [1].
+     */
+    @Test
+    void example2() {
+        // given
+        var nums1 = new int[]{1};
+        var m = 1;
+        var nums2 = new int[]{};
+        var n = 0;
+        var expected = new int[]{1};
+        // when
+        solution.merge(nums1, m, nums2, n);
+        // then
+        assertArrayEquals(expected, nums1);
+    }
+
+    /**
+     * Input: nums1 = [0], m = 0, nums2 = [1], n = 1
+     * Output: [1]
+     * Explanation: The arrays we are merging are [] and [1].
+     * The result of the merge is [1].
+     * Note that because m = 0, there are no elements in nums1.
+     * The 0 is only there to ensure the merge result can fit in nums1.
+     */
+    @Test
+    void example3() {
+        // given
+        var nums1 = new int[]{0};
+        var m = 0;
+        var nums2 = new int[]{1};
+        var n = 1;
+        var expected = new int[]{1};
+        // when
+        solution.merge(nums1, m, nums2, n);
+        // then
+        assertArrayEquals(expected, nums1);
+    }
+}
